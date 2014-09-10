@@ -22,6 +22,9 @@ object Multibottest extends PircBot {
 
     def main(args: Array[String]) {
         setName(BOTNAME)
+        setLogin("multibot")
+        // PircBot is silly and the "version" is used as the real name.
+        setVersion("multibot-git")
         setVerbose(true)
         setEncoding("UTF-8")
         connect()
